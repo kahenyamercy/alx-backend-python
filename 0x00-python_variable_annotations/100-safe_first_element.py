@@ -1,19 +1,11 @@
 #!/usr/bin/env python3
-"""
-Returns the first element of a sequence or None if the sequence is empty.
-"""
-
-from typing import Sequence, Any
+""" Duck typing - first element of a sequence """
+from typing import Any, Union, Sequence, Iterable, List, Tuple
 
 
-def safe_first_element(lst: Sequence) -> Any:
-    """
-    Args:
-        lst: A sequence first element is returned, or None if sequence is empty
-
-    Returns:
-        first element of sequence, or None if sequence is empty.
-    """
+# The types of the elements of the input are not know
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
+    """ Safe first element """
     if lst:
         return lst[0]
     else:
