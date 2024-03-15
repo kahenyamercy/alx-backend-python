@@ -9,10 +9,10 @@ from typing import Sequence, Any
 def safe_first_element(lst: Sequence) -> Any:
     """
     Args:
-        lst (Sequence): Input sequence.
+        lst: A sequence first element is returned, or None if sequence is empty
 
     Returns:
-        Any: The first element of sequence, or None if sequence is empty.
+        first element of sequence, or None if sequence is empty.
     """
     if lst:
         return lst[0]
