@@ -5,7 +5,7 @@ import asyncio
 from typing import Task
 
 
-def task_wait_random(max_delay: int) -> Task:
+def task_wait_random(max_delay: int) -> asyncio.Task:
     """Create and return an asyncio.Task for wait_random(max_delay).
 
     Args:
